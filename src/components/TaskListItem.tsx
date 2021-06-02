@@ -14,7 +14,8 @@ export const TaskListItem: FunctionComponent<Props> = ({ task, onDelete }) => {
 
   return (
     <li>
-      {task.name} <button onClick={onClick}>X</button>
+      <span className="innerHtml">{task.name}</span> 
+      <button onClick={onClick}>X</button>
     </li>
   );
 };
